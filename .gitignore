@@ -1,5 +1,12 @@
 .bloop
+.bsp
 .metals
+.vscode
 out
 .scalafmt.conf
 mill
+mill.bat
+
+node_modules
+package.json
+pnpm-lock.yaml
