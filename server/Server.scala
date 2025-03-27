@@ -55,7 +55,7 @@ object Server extends IOApp:
                                     // refreshListAsJson(plist).map(WebSocketFrame.Text(_)).foreach(queue.offer)
                                     Stream.eval(queue.offer(WebSocketFrame.Text(writeToString(Pong))))
                                 case Age(age) =>
-                                    Stream.eval(queu00e.offer(WebSocketFrame.Text(writeToString(Read(Age(age))))))
+                                    Stream.eval(queue.offer(WebSocketFrame.Text(writeToString(Read(Age(age))))))
                                 case Bye => 
                                     Stream.eval(IO.println("Let's byebye") >> queue.offer(WebSocketFrame.Close()))
                                 case _ =>

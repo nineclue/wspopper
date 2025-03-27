@@ -6,6 +6,7 @@ out
 .scalafmt.conf
 mill
 mill.bat
+\.mill-version
 
 node_modules
 package.json
